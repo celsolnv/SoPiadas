@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>So Piadas</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/side_menu.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/side_menu.css">
+    <link rel="stylesheet" href="../css/index.css">
 </head>
+
 <body>
     <div id="sideMenu" class="sideMenu">
         <div class="sideMenu-superior">
@@ -19,31 +20,32 @@
             </div>
         </div>
         <div class="search input-search">
-            <img class="search-icon" src="./static/search.svg" >
+            <img class="search-icon" src="../static/search.svg" >
             <input class="input-field" type="text" placeholder="Buscar no SoPiadas">
         </div>  
         <hr style="background-color: white;">
         <div class="sideMenu-options">
-            <div>
-                <span>Home</span>
-            </div>
-            <a href="./html/categoria.html">
+            <a href="../index.html">
+                <div>
+                    <span>Home</span>
+                </div>
+            </a>
+            <a href="categoria.html">
                 <div>
                     <span>Categorias</span>
                 </div>
             </a>
-
-            <a href="./html/favoritos.html">
+            <a href="favoritos.html">
                 <div>
-                    <span>Favoritas</span>
+                    <spna>Favoritas</span>
                 </div>
             </a>
-            <a href="./html/sobre.html">
+            <a href="sobre.html">
                 <div>
                     <span>Sobre</span>
                 </div>
             </a>
-            <a href="./html/suporte.html">
+            <a href="suporte.html">
                 <div>
                     <span>Suporte</span>
                 </div>
@@ -62,16 +64,19 @@
                               
         </div>
         <div class="logo">
-            <img src="./static/logo.svg" >
+            <img src="../static/logo.svg" >
         </div>
     </div>
 
-    <div class="container">
+    <div id="listagem">
+
+    </div>
+    <div class="container" id="piadas">
 
     </div>
 </body>
-<!-- Ícones feitos por <a href="https://www.flaticon.com/br/autores/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/br/" title="Flaticon"> www.flaticon.com</a> -->
-<script type="text/javascript" src="./js/piadas.js"></script>
-<script src="./js/side_menu.js"></script>
-<script type="text/javascript" src="./js/index.js"></script>
+<script src="../js/piadas.js"></script>
+<script src="../js/side_menu.js"></script>
+<script src="../js/main.js"></script>
+<script src="../js/categorias.js"></script>
 </html>

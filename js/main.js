@@ -1,20 +1,18 @@
-window.onload = carregarPiadas();
-
-function montaPiada(piada,indexPiada) {
-    let categoria = piada.categoria;
+function montaPiadaCategoria(piada,indexPiada) {
     let piadaText = "";
     let piadaList = piada.texto.split("- ");
     let piadaCod = piada.cod;
     let tamanhoList = piadaList.length;
-    let urlFavorite = "";
+    let categoria = piada.categoria;
     if (categoria=="Bebados"){
         categoria = "Bêbados";
     }
+    let urlFavorite = "";
     if (localStorage.getItem("piada-"+piadaCod) == "cheio") {
-        urlFavorite = "./static/favorite_cheio.svg"
+        urlFavorite = "../static/favorite_cheio.svg"
     }
     else{
-        urlFavorite = "./static/favorite_vazio.svg"
+        urlFavorite = "../static/favorite_vazio.svg"
     }
     let cardAcoes = '<hr>\
     <div class="card-acoes">\
@@ -22,10 +20,10 @@ function montaPiada(piada,indexPiada) {
             <img src="'+urlFavorite+'" alt="coração vazio" id="favorite-'+piadaCod+'">\
         </div>\
         <div class="copiar">\
-            <img src="./static/copiar.svg" alt="Copiar para área de transferência">\
+            <img src="../static/copiar.svg" alt="Copiar para área de transferência">\
         </div>\
         <div class="compartilhar">\
-            <img src="./static/share.svg" alt="compartilhar">\
+            <img src="../static/share.svg" alt="compartilhar">\
         </div>\
     </div>';
 
@@ -56,36 +54,23 @@ function montaPiada(piada,indexPiada) {
 function mostrarMais(idElemento) {
     let lerMaisButton = document.querySelector("#ler-mais-"+idElemento);
     let elemento = document.querySelector("#piada-"+idElemento)
-    console.log(elemento)
+    // console.log(elemento)
     elemento.style.display = "inline";
     lerMaisButton.style.display = "none";
-}
-function carregarPiadas() {
-    let cards = "" ;
-    let qtdPiadas = piadas.length;
-    for (let i = 0; i < 5; i++) {
-        let piada = piadas[i];
-        cards += montaPiada(piada,i);
-    }
-    document.querySelector(".container").innerHTML += cards
 }
 function favorite(codPiada) {
     piadas.forEach(piada => {
         if (piada.cod==codPiada) {
             let caminho = document.querySelector("#favorite-"+codPiada).src.split("/");
             let valor = caminho[caminho.length-1];
-            // console.log(valor)
             if (valor=="favorite_vazio.svg") {
-                document.querySelector("#favorite-"+codPiada).src = "./static/favorite_cheio.svg"
+                document.querySelector("#favorite-"+codPiada).src = "../static/favorite_cheio.svg"
                 localStorage.setItem(("piada-"+codPiada),"cheio")
             }
             else{
-                document.querySelector("#favorite-"+codPiada).src ="./static/favorite_vazio.svg";
+                document.querySelector("#favorite-"+codPiada).src ="../static/favorite_vazio.svg";
                 localStorage.setItem(("piada-"+codPiada),"vazio")
-            }
-
-            
+            } 
         }
     });
-    
 }

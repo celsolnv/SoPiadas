@@ -10,6 +10,9 @@
     z-index: 10;
     transition: width 0.5s;̣
 }
+.sideMenu a{
+    color: white;
+}
 .sideMenu-superior{
     display: flex;
     align-content: space-around;
