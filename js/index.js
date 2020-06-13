@@ -21,13 +21,13 @@ function montaPiada(piada,indexPiada) {
         <div class="favorito" onclick=favorite('+piadaCod+')>\
             <img src="'+urlFavorite+'" alt="coração vazio" id="favorite-'+piadaCod+'">\
         </div>\
-        <div class="copiar">\
-            <img src="./static/copiar.svg" alt="Copiar para área de transferência">\
-        </div>\
-        <div class="compartilhar">\
-            <img src="./static/share.svg" alt="compartilhar">\
-        </div>\
     </div>';
+        // <div class="copiar">\
+        //     <img src="./static/copiar.svg" alt="Copiar para área de transferência">\
+        // </div>\
+        // <div class="compartilhar">\
+        //     <img src="./static/share.svg" alt="compartilhar">\
+        // </div>\
 
     piadaList.forEach( (item,index) => {
         if(index==tamanhoList-1 && index>2){
@@ -63,7 +63,7 @@ function mostrarMais(idElemento) {
 function carregarPiadas() {
     let cards = "" ;
     let qtdPiadas = piadas.length;
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < qtdPiadas; i++) {
         let piada = piadas[i];
         cards += montaPiada(piada,i);
     }

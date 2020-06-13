@@ -1,3 +1,5 @@
 https://www.flaticon.com/br/icone-gratis/bobo-da-corte_1803557
 http://www.piadasaqui.com.br/
 https://uncategorized-creations.com/3284/add-social-sharing-to-your-apps/
+https://www.npmjs.com/package/cordova-plugin-x-socialsharing
+https://www.youtube.com/watch?v=ccrKrS5U5KM

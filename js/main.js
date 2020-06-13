@@ -19,13 +19,13 @@ function montaPiadaCategoria(piada,indexPiada) {
         <div class="favorito" onclick=favorite('+piadaCod+')>\
             <img src="'+urlFavorite+'" alt="coração vazio" id="favorite-'+piadaCod+'">\
         </div>\
-        <div class="copiar">\
-            <img src="../static/copiar.svg" alt="Copiar para área de transferência">\
-        </div>\
-        <div class="compartilhar">\
-            <img src="../static/share.svg" alt="compartilhar">\
-        </div>\
     </div>';
+        // <div class="copiar">\
+        //     <img src="../static/copiar.svg" alt="Copiar para área de transferência">\
+        // </div>\
+        // <div class="compartilhar">\
+        //     <img src="../static/share.svg" alt="compartilhar">\
+        // </div>\
 
     piadaList.forEach( (item,index) => {
         if(index==tamanhoList-1 && index>2){

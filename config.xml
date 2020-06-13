@@ -5,7 +5,9 @@
         xmlns:gap="http://phonegap.com/ns/1.0">
     <name>SoPiadas</name>
     <description>
-        Bem vindo ao SoPiadas
+        Só piadas é um aplicativo criado durante a pandemia do covid-19 para que 
+        as pessoas se sintam mais alegres. 
+        Além de ajudar as pessoas a se socializarem.
     </description>
     <author email="celsolnv27@gmail.com">
         Celso Leandro Nascimento Vasconcelos
@@ -22,7 +24,7 @@
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
     <allow-intent href="geo:*" />
-    
+
     <platform name="android">
         <allow-intent href="market:*" />
     </platform>
@@ -36,5 +38,4 @@
         <icon density="xxxhdpi" src="src/res/icon/android/drawable-xxxhdpi-icon.png" />
     </platform>
 
-    
 </widget>
