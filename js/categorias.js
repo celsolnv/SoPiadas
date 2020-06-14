@@ -30,6 +30,7 @@ function abrirCategoria(nomeCategoria) {
             piadaCategoria.push(piadaJson)
         }
     });
-    console.log(piadaCategoria)
+    // console.log(piadaCategoria)
     carregarPiadasCategoria(piadaCategoria);
+    window.scrollTo(0,0);
 }

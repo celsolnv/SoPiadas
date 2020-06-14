@@ -27,7 +27,7 @@ body{
 .card-acoes{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    /* justify-content: space-between; */
-    margin: 0rem 1rem
+    /* justify-content: center; */
+    justify-content: space-between;
+    margin: 0rem 5rem;
 }

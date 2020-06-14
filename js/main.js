@@ -19,17 +19,13 @@ function montaPiadaCategoria(piada,indexPiada) {
         <div class="favorito" onclick=favorite('+piadaCod+')>\
             <img src="'+urlFavorite+'" alt="coração vazio" id="favorite-'+piadaCod+'">\
         </div>\
+        <div class="compartilhar" onclick=share('+piadaCod+')>\
+            <img src="../static/share.svg" alt="compartilhar">\
+        </div>\
     </div>';
-        // <div class="copiar">\
-        //     <img src="../static/copiar.svg" alt="Copiar para área de transferência">\
-        // </div>\
-        // <div class="compartilhar">\
-        //     <img src="../static/share.svg" alt="compartilhar">\
-        // </div>\
 
     piadaList.forEach( (item,index) => {
         if(index==tamanhoList-1 && index>2){
-            console.log("entrou")
             piadaText += "<p class='mais'>"+item+"</p></div>";
         }
         else if (index==2){
@@ -54,7 +50,6 @@ function montaPiadaCategoria(piada,indexPiada) {
 function mostrarMais(idElemento) {
     let lerMaisButton = document.querySelector("#ler-mais-"+idElemento);
     let elemento = document.querySelector("#piada-"+idElemento)
-    // console.log(elemento)
     elemento.style.display = "inline";
     lerMaisButton.style.display = "none";
 }

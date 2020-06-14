@@ -21,6 +21,9 @@ function montaPiada(piada,indexPiada) {
         <div class="favorito" onclick=favorite('+piadaCod+')>\
             <img src="'+urlFavorite+'" alt="coração vazio" id="favorite-'+piadaCod+'">\
         </div>\
+        <div class="compartilhar" onclick=share('+piadaCod+')>\
+            <img src="static/share.svg" alt="compartilhar">\
+        </div>\
     </div>';
         // <div class="copiar">\
         //     <img src="./static/copiar.svg" alt="Copiar para área de transferência">\
@@ -62,7 +65,9 @@ function mostrarMais(idElemento) {
 }
 function carregarPiadas() {
     let cards = "" ;
-    let qtdPiadas = piadas.length;
+    let qtdPiadas = 100;
+    // let qtdPiadas = piadas.length;
+
     for (let i = 0; i < qtdPiadas; i++) {
         let piada = piadas[i];
         cards += montaPiada(piada,i);
@@ -88,4 +93,16 @@ function favorite(codPiada) {
         }
     });
     
+}
+function share(idPiada) {
+    console.warn("Compartilhando dados!!!");
+    let mensagem = "";
+    piadas.forEach(piada => {
+        if (piada.cod==idPiada) {
+            mensagem = piada.texto;
+            console.log(mensagem);
+            window.plugins.socialsharing.share(mensagem);
+            return;
+        }
+    });
 }
