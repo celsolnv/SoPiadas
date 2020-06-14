@@ -69,3 +69,15 @@ function favorite(codPiada) {
         }
     });
 }
+function share(idPiada) {
+    console.warn("Compartilhando dados!!!");
+    let mensagem = "";
+    piadas.forEach(piada => {
+        if (piada.cod==idPiada) {
+            mensagem = piada.texto;
+            console.log(mensagem);
+            window.plugins.socialsharing.share(mensagem);
+            return;
+        }
+    });
+}
