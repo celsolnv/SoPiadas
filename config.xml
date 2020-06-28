@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.soPiadas"
-        version="1.0.0"
+        version="1.0"
         xmlns="http://src.w3.org/ns/widgets"
         xmlns:gap="http://phonegap.com/ns/1.0">
     <name>SoPiadas</name>
@@ -32,7 +32,7 @@
 
     <platform name="android">
         <preference name="android-minSdkVersion"  value="16" />
-        <preference name="android-targetSdkVersion"  value="26" />
+        <preference name="android-targetSdkVersion"  value="28" />
         <allow-intent href="market:*" />
         <icon density="ldpi" src="src/res/icon/android/drawable-ldpi-icon.png" />
         <icon density="mdpi" src="src/res/icon/android/drawable-mdpi-icon.png" />
