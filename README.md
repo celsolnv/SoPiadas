@@ -20,7 +20,7 @@
 <p/> 
 
 <img src="screens/Home.png" />
-<img src="screens/Favoritas"/>
+<img src="screens/Favoritas.png"/>
 <img src="screens/Categorias.png"/>
 <img src="screens/DentroDeCategorias.png"/>
 
